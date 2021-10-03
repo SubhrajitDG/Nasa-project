@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Space Exploration</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Travel</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="explore.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Never Stop</h2>
+            <h3>Exploring The World</h3>
+            <p>If Helen Keller can look at life as a great adventure, what excuse do the rest of us have? Take a chance and live life to the fullest. When we are at our most daring is when we feel the most fulfillment.</p>
+            <a href="#explore">Explore ></a>
+            <a href="content.html">Go to content page</a>
+
+            <div id="explore" class="explore">
+                <h2>We Made A Presentaion</h2>
+                <h3>On Space Exploration</h3>
+                <h4>Have A Look.</h4>
+                <a href="https://docs.google.com/presentation/d/1GZWMlHSYatZu9b2nWEMXkPcSP9jin-Ue/edit?usp=sharing&ouid=116189133054742477803&rtpof=true&sd=true">Download</a>
+            </div>
+        </div>
+
+
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="content.html">Content</a></li>
+            <li><a href="#explore">Download ppt</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle= document.querySelector('.toggle')
+        const showcase= document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+
+</body>
+</html>
